@@ -4,7 +4,7 @@ metadata:
   labels:
     name: pacman
   name: pacman
-  namespace: app1
+  namespace: pacman
 spec:
   replicas: 1
   selector:
@@ -26,7 +26,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: pacman
-  namespace: app1
+  namespace: pacman
   labels:
     app.kubernetes.io/name: pacman
 spec:
@@ -39,7 +39,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: pacman
-  namespace: app1
+  namespace: pacman
   labels:
     name: pacman
 spec:
